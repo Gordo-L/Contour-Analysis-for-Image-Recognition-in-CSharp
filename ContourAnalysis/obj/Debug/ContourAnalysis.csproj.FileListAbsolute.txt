@@ -1,0 +1,6 @@
+E:\visual studio文件\homework3\ContourAnalysis\obj\Debug\ContourAnalysis.csprojAssemblyReference.cache
+E:\visual studio文件\homework3\ContourAnalysis\obj\Debug\ContourAnalysis.csproj.CoreCompileInputs.cache
+E:\visual studio文件\homework3\ContourAnalysis\bin\Debug\ContourAnalysis.dll
+E:\visual studio文件\homework3\ContourAnalysis\bin\Debug\ContourAnalysis.pdb
+E:\visual studio文件\homework3\ContourAnalysis\obj\Debug\ContourAnalysis.dll
+E:\visual studio文件\homework3\ContourAnalysis\obj\Debug\ContourAnalysis.pdb
