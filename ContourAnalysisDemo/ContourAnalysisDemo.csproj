@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26684762-B2C9-4958-BC8C-985E4F74204E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ContourAnalysisDemo</RootNamespace>
+    <AssemblyName>ContourAnalysisDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV">
+      <HintPath>..\ContourAnalysisProcessing\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>..\ContourAnalysisProcessing\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>..\ContourAnalysisProcessing\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoGenerateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoGenerateForm.Designer.cs">
+      <DependentUpon>AutoGenerateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm1.Designer.cs">
+      <DependentUpon>HelpForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm2.Designer.cs">
+      <DependentUpon>HelpForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowContoursForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowContoursForm.Designer.cs">
+      <DependentUpon>ShowContoursForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemplateEditor.Designer.cs">
+      <DependentUpon>TemplateEditor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AutoGenerateForm.resx">
+      <DependentUpon>AutoGenerateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm1.resx">
+      <DependentUpon>HelpForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm2.resx">
+      <DependentUpon>HelpForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ShowContoursForm.resx">
+      <DependentUpon>ShowContoursForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemplateEditor.resx">
+      <DependentUpon>TemplateEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Smiles.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tahoma.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContourAnalysisProcessing\ContourAnalysisProcessing.csproj">
+      <Project>{38bec914-30e2-4b31-9460-951708a51081}</Project>
+      <Name>ContourAnalysisProcessing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContourAnalysis\ContourAnalysis.csproj">
+      <Project>{3ce58b24-41e3-4e9c-96e3-cd22c0e9de69}</Project>
+      <Name>ContourAnalysis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="angry.png" />
+    <Content Include="happy.png" />
+    <Content Include="home.png" />
+    <Content Include="smile.png" />
+    <Content Include="web.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
